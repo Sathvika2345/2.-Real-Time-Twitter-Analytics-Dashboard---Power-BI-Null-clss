@@ -1,38 +1,73 @@
-# 2.-Real-Time-Twitter-Analytics-Dashboard---Power-BI-Null-clss
-# 📊 Real-Time Data Analytics Projects
+# Welcome to your Lovable project
 
-This repository contains three real-time data analytics visualizations created as part of internship projects using **Python**, **Power BI**, and **Tableau**. Each visualization addresses specific business requirements with advanced filtering, scheduling logic, and insightful designs.
+## Project info
 
----
+**URL**: https://lovable.dev/projects/68e50ff1-6d1b-4346-b101-cbbc79c1c9ae
 
-## 🔧 Projects Overview
+## How can I edit this code?
 
-### 📊 2. Real-Time Twitter Analytics Dashboard (Power BI)
+There are several ways of editing your application.
 
-**📉 Visualization**: Grouped Bar Chart  
+**Use Lovable**
 
-**🔍 Description**:  
-This visualization presents a **grouped bar chart** comparing:
-- **Average Rating**
-- **Total Review Count**
+Simply visit the [Lovable Project](https://lovable.dev/projects/68e50ff1-6d1b-4346-b101-cbbc79c1c9ae) and start prompting.
 
-...across the **top 10 app categories by number of installs**.
+Changes made via Lovable will be committed automatically to this repo.
 
-**📋 Applied Filters**:
-- **Average rating ≥ 4.0**
-- **App size ≥ 10 MB**
-- **Last updated in January**
+**Use your preferred IDE**
 
-**🕒 Time-Based Visibility Rule**:
-- This chart is **only displayed between 3:00 PM – 5:00 PM IST**
-- Outside this time range, the chart is hidden from the dashboard
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-**⚙️ Tools Used**:
-- **Microsoft Power BI**
-- **DAX Expressions** for time-based visibility control
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**🧠 DAX Logic Sample**:
-```dax
-ShowGraphFlag = 
-VAR CurrentTime = TIME(HOUR(NOW()), MINUTE(NOW()), 0)
-RETURN IF(CurrentTime >= TIME(15, 0, 0) && CurrentTime <= TIME(17, 0, 0), 1, 0)
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/68e50ff1-6d1b-4346-b101-cbbc79c1c9ae) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
